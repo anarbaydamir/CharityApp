@@ -8,7 +8,7 @@ export default class SocialMedia extends Component {
         return (
             <View style={styles.container}>
                 <View>
-                    <Text style={styles.loginText}>Login instantly:</Text>
+                    <Text style={styles.loginText}>Qısa yolla daxil ol:</Text>
                 </View>
                 <View style={styles.socialContainer}>
                     <View style={styles.buttonView}>
@@ -22,9 +22,6 @@ export default class SocialMedia extends Component {
                             style={styles.google} />
                     </View>
                 </View>
-                <View style={styles.loginOrView}>
-                    <Text style={styles.loginOrText}>or login with email/phone</Text>
-                </View>
             </View>
         )
     }
@@ -32,9 +29,10 @@ export default class SocialMedia extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 6,
         alignItems: 'center',
         justifyContent: 'center',
+        marginBottom:25
     },
     socialContainer: {
         flex: 1,
@@ -50,10 +48,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderColor: '#f2f4f7',
         borderWidth: 1,
-        paddingBottom:'5%',
-        paddingTop:'5%',
-        paddingLeft:'18%',
-        paddingRight:'18%',
+        width:'45%',
+        height:45,
         margin:'3%',
         borderRadius:5
     },

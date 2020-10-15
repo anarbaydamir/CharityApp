@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
+import Icons from 'react-native-vector-icons/AntDesign'
 
 export default class Header extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image style={styles.image} source={require('../../../assets/arrow.png')} />
+                <Icons style={styles.image} name="arrowleft"
+                size={25}/>
                 <View>
-                    <Text style={styles.loginText}>Login Now</Text>
+                    <Text style={styles.loginText}>Daxil Ol</Text>
                 </View>
                 <View>
-                    <Text style={styles.pleaseText}>Please login to continue using our app</Text>
+                    <Text style={styles.pleaseText}>İstifadə üçün login edin.</Text>
                 </View>
             </View>
         )
@@ -19,19 +21,19 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
     container: {
+        flex:20,
         marginTop:'3%',
-        marginBottom:'50%'
+        marginBottom:10
     },
     image: {
-        margin: '3%',
-        width: 19,
-        height: 12
+        margin: 8,
+        color:'#A8ADB4'
     },
     loginText: {
         fontSize: 22,
         color: '#3e4a59',
         fontWeight: 'bold',
-        margin: '3%'
+        margin: 8
     },
     pleaseText: {
         fontSize: 13,

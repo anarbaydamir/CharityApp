@@ -7,7 +7,7 @@ export default class EmailLogin extends Component {
             <View style={styles.container}>
                 <View style={styles.inputContainer}>
                     <View style={styles.textView}>
-                        <Text style={styles.textStyle}>E-mail ID or Mobile Number</Text>
+                        <Text style={styles.textStyle}>Email və ya Mobil Nömrə</Text>
                     </View>
                     <View>
                         <TextInput style={styles.inputStyle} keyboardType='email-address' />
@@ -15,7 +15,7 @@ export default class EmailLogin extends Component {
                 </View>
                 <View style={styles.inputContainer}>
                     <View style={styles.textView}>
-                        <Text style={styles.textStyle}>Password</Text>
+                        <Text style={styles.textStyle}>Şifrə</Text>
                     </View>
                     <View>
                         <TextInput style={styles.inputStyle} secureTextEntry={true} />
@@ -28,16 +28,16 @@ export default class EmailLogin extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        marginTop: '30%'
+        flex: 23,
+        marginTop: 50
     },
     inputContainer: {
         flex: 1,
         flexDirection: 'column',
-        marginBottom:'25%'
+        marginBottom:10
     },
     textView: {
-        marginBottom: '5%'
+        marginBottom: 10
     },
     textStyle: {
         fontSize: 13,

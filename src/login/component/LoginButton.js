@@ -6,10 +6,10 @@ export default class LoginButton extends Component {
         return (
             <View style={styles.container}>
                 <TouchableOpacity style={styles.buttonView}>
-                        <Text style={styles.buttonText}>Login to my account</Text>
+                        <Text style={styles.buttonText}>Hesabıma daxil ol</Text>
                 </TouchableOpacity>
                 <View style={styles.textView}>
-                    <Text style={styles.haveText}>Don't have an account ? </Text><Text style={styles.registerText}>Register now</Text>
+                    <Text style={styles.haveText}>Hesabınız yoxdur? </Text><Text style={styles.registerText}>Qeydiyyatdan keç</Text>
                 </View>
             </View>
         )
@@ -18,8 +18,7 @@ export default class LoginButton extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        marginTop:'60%'
+        flex:12,
     },
     buttonView:{
         width:'100%',
