@@ -1,27 +1,26 @@
 import React, { Component } from 'react'
-import { View, Text, Image, StyleSheet } from 'react-native'
-import Icons from 'react-native-vector-icons/AntDesign'
+import { Text, View,StyleSheet } from 'react-native'
 
 export default class Header extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <View>
-                    <Text style={styles.loginText}>Daxil Ol</Text>
+                    <Text style={styles.loginText}>Qeydiyyatdan Keç</Text>
                 </View>
                 <View>
-                    <Text style={styles.pleaseText}>İstifadə üçün login edin.</Text>
+                    <Text style={styles.pleaseText}>Hesabınız yoxdursa qeydiyyatdan keçin.</Text>
                 </View>
             </View>
         )
     }
 }
 
-const styles = StyleSheet.create({
+const styles=StyleSheet.create({
     container: {
-        flex:18,
-        marginTop:'3%',
-        marginBottom:80
+        flex:0.1,
+        marginTop:'10%',
+        marginBottom:30
     },
     image: {
         margin: 8,

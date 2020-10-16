@@ -1,10 +1,26 @@
 import React, { Component } from 'react'
-import { View, Text, Image, StyleSheet, TextInput } from 'react-native'
+import { Text, View,StyleSheet,TextInput } from 'react-native'
 
-export default class EmailLogin extends Component {
+export default class Body extends Component {
     render() {
         return (
             <View style={styles.container}>
+                <View style={styles.inputContainer}>
+                    <View style={styles.textView}>
+                        <Text style={styles.textStyle}>Ad</Text>
+                    </View>
+                    <View>
+                        <TextInput style={styles.inputStyle} />
+                    </View>
+                </View>
+                <View style={styles.inputContainer}>
+                    <View style={styles.textView}>
+                        <Text style={styles.textStyle}>Soyad</Text>
+                    </View>
+                    <View>
+                        <TextInput style={styles.inputStyle} />
+                    </View>
+                </View>
                 <View style={styles.inputContainer}>
                     <View style={styles.textView}>
                         <Text style={styles.textStyle}>Email</Text>
@@ -21,18 +37,24 @@ export default class EmailLogin extends Component {
                         <TextInput style={styles.inputStyle} secureTextEntry={true} />
                     </View>
                 </View>
+                <View style={styles.inputContainer}>
+                    <View style={styles.textView}>
+                        <Text style={styles.textStyle}>Şifrə təkrar</Text>
+                    </View>
+                    <View>
+                        <TextInput style={styles.inputStyle} secureTextEntry={true} />
+                    </View>
+                </View>
             </View>
         )
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 23,
-        marginTop: 50
+const styles=StyleSheet.create({
+    container:{
+        flex:3
     },
     inputContainer: {
-        flex: 1,
         flexDirection: 'column',
         marginBottom:10
     },
